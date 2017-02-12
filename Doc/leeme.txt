@@ -1,0 +1,5 @@
+Nombre aplicación: Romtracker
+Slogan: Break the Limits
+Fuente: Quick Snad
+Notas: La página de login abrirá un pop-up en lugar de un direccionarnos a otra página.
+
