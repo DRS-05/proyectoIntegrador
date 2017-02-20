@@ -1,32 +1,113 @@
+@font-face{
+    font-family: 'lobsterregular';
+    src: url('fonts/lobster-regular-webfont.eot');
+    src: url('fonts/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lobster-regular-webfont.woff2') format('woff2'),
+         url('fonts/lobster-regular-webfont.woff') format('woff'),
+         url('fonts/lobster-regular-webfont.ttf') format('truetype'),
+         url('fonts/lobster-regular-webfont.svg#lobsterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.eot');
+    src: url('fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'quicksandbold';
+    src: url('fonts/quicksand-bold-webfont.eot');
+    src: url('fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'quicksandregular';
+}
+
 header {
 	width: 100%;
-	height: 1200px;
+	height: 100vh;
 	background-image: url("../media/img/epic-rides1.jpg");
-	background-size: auto 1000px;
-	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	transform:background translateX(-50%) translateY(-50%);
+	position: relative;
+	/*background-repeat: no-repeat;
+	overflow: hidden;*/
 }
 
 nav {
 	height: 50px;
-	border:1px solid black;
+	
+
 }
 
 nav div {
 	width: 105px;
-	height: 50px;
+	height: 35px;
 	display: inline-block;
-	border:1px solid #F5F5F5;
-	color: #F5F5F5;
+	border:2.5px solid #008584;
+	color: #008584;
+	background-color: #F5F5F5;
 	float: right;
-	font-size: large;
-	font-weight: 700;
-	line-height: 50px;
+	font-size: medium;
+	font-weight: 800;
+	line-height: 35px;
 	text-align: center;
-	margin-left: 5vw;
-	border-radius: 10px 10px 10px 10px;
+	margin-top: 10px;
+	margin-left: 30px;
+	border-radius: 40px;
+
 }
 
-nav>div:first {
-	
+nav div:first-child {
+	margin-right: 15px;
+	background-color: #F5F5F5;
+	color: #008584;
+	border:2.5px solid #008584;
 }
+
+#logo {
+	position: absolute;
+	top:2vh;
+	left: 4vh;
+	width: 200px;
+	height: 40px;
+	font-family: 'lobsterregular';
+	font-size: x-large;
+	border:2.5px solid #008584;
+	line-height: 40px;
+	background-color: #F5F5F5;
+	color: #008584;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#logo p {
+	margin-left: 20px;
+
+}
+
+nav div:hover {
+	background-color: #008584;
+	color: #F5F5F5;
+	border:2.5px solid #F5F5F5;
+}
+
+
 
