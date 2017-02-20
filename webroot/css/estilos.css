@@ -41,7 +41,7 @@ body {
 
 header {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	background-image: url("../media/img/epic-rides1.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
@@ -52,17 +52,18 @@ header {
 }
 
 nav {
-	height: 50px;
+	height: 2.6vh;
 	
 
 }
 
 nav div {
-	width: 105px;
-	height: 35px;
+	width: 8vw;
+	min-width: 100px;
+	height: 3.64vh;
+	min-height: 35px;
 	display: inline-block;
-	border:2.5px solid #008584;
-	color: #008584;
+	border:0.26vh solid #008584;
 	background-color: #F5F5F5;
 	float: right;
 	font-size: medium;
@@ -73,6 +74,11 @@ nav div {
 	margin-left: 30px;
 	border-radius: 40px;
 
+}
+
+nav div a{
+	text-decoration: none;
+	color: #008584;
 }
 
 nav div:first-child {
@@ -107,7 +113,11 @@ nav div:hover {
 	background-color: #008584;
 	color: #F5F5F5;
 	border:2.5px solid #F5F5F5;
+	
 }
 
+nav div:hover > a{
+	color: #F5F5F5;
+}
 
 
