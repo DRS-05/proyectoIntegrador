@@ -52,67 +52,62 @@ header {
 }
 
 nav {
-	height: 2.6vh;
-	
+	/*height: 2.6vh;*/
+	position: absolute;
+	right: 20px;
 
 }
 
 nav div {
 	width: 8vw;
-	min-width: 100px;
-	height: 3.64vh;
-	min-height: 35px;
+	height: 3.64vh;	
 	display: inline-block;
-	border:0.26vh solid #008584;
+	border:0.25vh  solid #008584;
 	background-color: #F5F5F5;
-	float: right;
-	font-size: medium;
+	font-size: 1.75vh 0.87vw;
 	font-weight: 800;
-	line-height: 35px;
+	line-height: 3.64vh;
 	text-align: center;
-	margin-top: 10px;
-	margin-left: 30px;
-	border-radius: 40px;
+	margin-top: 1vh;
+	margin-left: 1.6vw;
+	border-radius: 4.2vh;
 
 }
 
 nav div a{
 	text-decoration: none;
 	color: #008584;
+	display: inline-block;
+
 }
 
-nav div:first-child {
-	margin-right: 15px;
-	background-color: #F5F5F5;
-	color: #008584;
-	border:2.5px solid #008584;
-}
 
 #logo {
 	position: absolute;
 	top:2vh;
 	left: 4vh;
-	width: 200px;
-	height: 40px;
+	width: 15vw;
+	height: 6vh;
 	font-family: 'lobsterregular';
-	font-size: x-large;
-	border:2.5px solid #008584;
-	line-height: 40px;
+	font-size: 3.8vh;
+	border:0.25vh solid #008584;
+	line-height: 6vh;
 	background-color: #F5F5F5;
 	color: #008584;
 	font-weight: bold;
-	border-radius: 10px;
+	border-radius: 1vh;
+	text-align: center;
 }
 
 #logo p {
-	margin-left: 20px;
+	
 
 }
 
 nav div:hover {
 	background-color: #008584;
 	color: #F5F5F5;
-	border:2.5px solid #F5F5F5;
+	border-color: #F5F5F5;
 	
 }
 
@@ -120,4 +115,25 @@ nav div:hover > a{
 	color: #F5F5F5;
 }
 
+#lema {
+	position: absolute;
+	width: 22vw;
+	height: 10.42vh;
+	left: 6.5vw;
+	top:44vh;
+	font-size: 2.5vh;
+}
+
+#lema >h1 {
+	font-size: 5vh;
+	font-weight: bold;
+	color: #006666;
+	margin-bottom: 18px;
+}
+
+#lema > p {
+	color: #E9E9E9;
+	font-weight: bold;
+	text-align: justify;
+}
 
