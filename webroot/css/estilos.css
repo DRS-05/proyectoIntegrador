@@ -52,7 +52,6 @@ header {
 }
 
 nav {
-	/*height: 2.6vh;*/
 	position: absolute;
 	right: 20px;
 
@@ -64,7 +63,7 @@ nav div {
 	display: inline-block;
 	border:0.25vh  solid #008584;
 	background-color: #F5F5F5;
-	font-size: 1.75vh 0.87vw;
+	font-size: 0.95vw;
 	font-weight: 800;
 	line-height: 3.64vh;
 	text-align: center;
@@ -89,7 +88,7 @@ nav div a{
 	width: 15vw;
 	height: 6vh;
 	font-family: 'lobsterregular';
-	font-size: 3.8vh;
+	font-size: 2vw;
 	border:0.25vh solid #008584;
 	line-height: 6vh;
 	background-color: #F5F5F5;
@@ -121,11 +120,11 @@ nav div:hover > a{
 	height: 10.42vh;
 	left: 6.5vw;
 	top:44vh;
-	font-size: 2.5vh;
+	font-size: 1.7vw;
 }
 
 #lema >h1 {
-	font-size: 5vh;
+	font-size: 2.4vw;
 	font-weight: bold;
 	color: #006666;
 	margin-bottom: 18px;
@@ -137,3 +136,23 @@ nav div:hover > a{
 	text-align: justify;
 }
 
+#first_container {
+	position: relative;
+	width: 100%;
+	/*height: 52vh;*/
+	height: 400px;
+	background-color: #cccccc;
+}
+
+#first_container > div{
+	position: relative;
+	width: 30vw;
+	height: 23.4vh;
+	border: 1px solid blue;
+
+}
+
+#first_container > div:first-child {
+	left: 15px;
+	top: 25px;
+}
