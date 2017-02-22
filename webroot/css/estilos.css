@@ -57,31 +57,42 @@ nav {
 
 }
 
-nav div {
+/*nav div {
 	width: 8vw;
 	height: 3.64vh;	
 	display: inline-block;
 	border:0.25vh  solid #008584;
-	background-color: #F5F5F5;
-	font-size: 0.95vw;
-	font-weight: 800;
+	
 	line-height: 3.64vh;
 	text-align: center;
 	margin-top: 1vh;
 	margin-left: 1.6vw;
-	border-radius: 4.2vh;
+	
 
-}
+}*/
 
-nav div a{
+nav a{
+	display: inline-block;
 	text-decoration: none;
 	color: #008584;
 	display: inline-block;
-
+	border:0.25vh solid #008584;
+	border-radius: 4.2vh;
+	padding:0.2vh 2.14vw; 
+	background-color: #F5F5F5;
+	margin-top: 1vh;
+	margin-left: 1.6vw;
+	font-size: 0.95vw;
+	font-weight: 800;
 }
 
 
 #logo {
+	
+}
+
+#logo p {
+	display: inline-block;
 	position: absolute;
 	top:2vh;
 	left: 4vh;
@@ -96,23 +107,19 @@ nav div a{
 	font-weight: bold;
 	border-radius: 1vh;
 	text-align: center;
-}
-
-#logo p {
-	
 
 }
 
-nav div:hover {
+nav a:hover {
 	background-color: #008584;
 	color: #F5F5F5;
 	border-color: #F5F5F5;
 	
 }
 
-nav div:hover > a{
+/*nav div:hover > a{
 	color: #F5F5F5;
-}
+}*/
 
 #lema {
 	position: absolute;
@@ -142,13 +149,14 @@ nav div:hover > a{
 	/*height: 52vh;*/
 	height: 400px;
 	background-color: #cccccc;
+	display: flex;
+	align-content: flex-end;
 }
 
 #first_container > div{
-	position: relative;
-	width: 30vw;
-	height: 23.4vh;
 	border: 1px solid blue;
+	flex-basis: 27vw;
+	margin:0 3.13vw;
 
 }
 
