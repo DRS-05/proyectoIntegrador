@@ -75,7 +75,6 @@ nav a{
 	display: inline-block;
 	text-decoration: none;
 	color: #008584;
-	display: inline-block;
 	border:0.25vh solid #008584;
 	border-radius: 4.2vh;
 	padding:0.2vh 2.14vw; 
@@ -165,7 +164,7 @@ nav a:hover {
 	text-align: justify;
 	margin-top: 2.6vh;
 	font-size: 1.5vw;
-	letter-spacing: 2px;
+	/*letter-spacing: 2px;*/
 }
 
 #first_container > div > h1 {
@@ -225,6 +224,17 @@ nav a:hover {
 	top: 50px;
 }
 
+#parrafo a {
+	display: inline-block;
+	text-decoration: none;
+	color: #cccccc;
+	border:0.25vh solid #cccccc;
+	border-radius: 4.2vh;
+	padding:0.5vh 2.7vw; 
+	background-color: #006666;
+	font-size: 0.95vw;
+	font-weight: 800;
+}
 
 
 
