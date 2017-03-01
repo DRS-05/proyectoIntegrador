@@ -392,6 +392,44 @@ footer p {
 	left: 700px;
 }
 
+#login {
+	visibility: hidden;
+	opacity: 0;
+	position: relative;
+	top: -300px;
+	background-color: #008584;
+	
+}
+
+#login:target {
+	visibility: visible;
+	opacity: 1;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	-webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+}
+
+/*.login_container {
+	position: relative;
+	margin:7% auto;
+	padding: 30px 50px;
+	width: 50%;
+}*/
 
 
+/*a.cerrar {
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	padding: 7px 10px;
+	font-size: 20px;
+	text-decoration: none;
+	line-height: 1;
+}*/
 

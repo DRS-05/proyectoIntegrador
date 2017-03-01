@@ -17,7 +17,7 @@
 	<body>
 		<header>
 			<nav>
-				<a href="">Login</a>
+				<a href="#login" class="login_link">Login</a>
 				<a href="">Registrarse</a>
 			</nav>
 			<div id="logo">
@@ -26,6 +26,19 @@
 			<div id="lema">
 				<h1>Rompe tus límites</h1>
 				<p>Marcate nuevas metas, no te estanques estamos aqui para que sepas como cuando y dónde tienes que mejorar. La mejor aplicación de monitorizaje deportivo, ¿Te vas a perder nuestras ventajas?</p>
+			</div>
+			<div class="ventana_login" id="login">
+				<div class="login_container">
+					<h1>Incia tu sesión</h1>
+					<form action="#" method="post">
+						<label>Usuario</label>
+						<input type="text" name="user">
+						<label>Contraseña</label>
+						<input type="text" name="pass">
+						<input type="submit" name="enviar" value="Enviar">
+						<a class="cerrar" href="#">X</a>
+					</form>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -72,7 +85,7 @@
 			</div>
 		</main>
 		<footer>
-			<p>c 2017 David Romero,ROMSTRACKER.inc Todos los derechos reservados</p>
+			<p>© 2017 David Romero,ROMSTRACKER.inc Todos los derechos reservados</p>
 			<div id="logo_foot">
 				<p>ROMSTRACKER</p>
 			</div>
