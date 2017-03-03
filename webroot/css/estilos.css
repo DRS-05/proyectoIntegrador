@@ -563,12 +563,12 @@ a.cerrar {
 .register_container form p input {
 	position: relative;
 	display: inline-block;
-	/*left: 10px;*/
+	left: 10px;
 }
 
 .frecuencia {
 	position: relative;
 	display: inline-block;
 	width: 30px;
-	left: 0;
+	left: 0px;
 }
