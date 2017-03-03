@@ -18,7 +18,7 @@
 		<header>
 			<nav>
 				<a href="#login" class="login_link">Login</a>
-				<a href="#registro" class="registro_link">Registrarse</a>
+				<a href="#register" class="registro_link">Registrarse</a>
 			</nav>
 			<div id="logo">
 				<p>ROMSTRACKER</p>
@@ -45,8 +45,71 @@
 				<a class="cerrar" href="#">X</a>
 				<div id="regis">
 					<p>¿Aún no te has registrado?</p>
-					<a href="#registro" class="registro_link">Registrarse</a>
+					<a href="#register" class="registro_link">Registrarse</a>
 				</div>	
+			</div>
+			<div class="ventana_register" id="register">
+				<h1>Registrate en RomsTracker</h1>
+				<div class="register_container">
+					<form action="#" method="post">
+						<p>
+							<label>Nombre</label>
+							<input type="text" name="nombre" id="first_input">
+						</p>
+						<p>
+							<label>Apellidos</label>
+							<input type="text" name="apellidos" id="second_input">
+						</p>
+						<p>
+							<label>Nombre Usuario</label>
+							<input type="text" name="usuario" id="third_input">
+						</p>
+						<p>
+							<label>E-mail</label>
+							<input type="text" name="e-mail" id="fourth_input">
+						</p>
+						<p>
+							<label>Contraseña</label>
+							<input type="text" name="pass" id="fifth_input">
+						</p>
+						<p>
+							<label>Estatura</label>
+							<input type="text" name="estatura" id="sixth_input">
+						</p>
+						<p>
+							<label>Peso</label>
+							<input type="text" name="peso" id="seventh_input">
+						</p>
+						<p>
+							<h2>Zonas de frecuencia cardíaca</h2>
+							<label>sprint</label>
+							<input type="number" name="sprintmin" id="sprintmin">
+							<input type="number" name="sprintmax" id="sprintmax">
+							<label>velocidad</label>
+							<input type="number" name="speedmin" id="speedmin">
+							<input type="number" name="speedmax" id="speedmax">
+							<label>Cardio</label>
+							<input type="number" name="cardiomin" id="cardiomin">
+							<input type="number" name="cardiomax" id="cardiomax">
+							<label>Fitness</label>
+							<input type="number" name="fitnesmin" id="fitnesmin">
+							<input type="number" name="fitnesmax" id="fitnesmax">
+							<label>sencillo</label>
+							<input type="number" name="simplemin" id="simplemin">
+							<input type="number" name="simplemax" id="simplemax">
+						</p>
+						<p>
+							<label>Tipo de corredor</label>
+							<input name="casual" type="checkbox" value="Casual"/>Casual
+							<input name="Medio_fondo" type="checkbox" value="medio_fondo"/>Medio Fondo
+							<input name="fondo" type="checkbox" value="fondo"/>Fondo
+							<input name="trail" type="checkbox" value="trail"/>Trail
+						</p>
+
+						<input class="boton" type="submit" name="enviar" value="Enviar" >
+					</form>
+				</div>
+				<a class="cerrar" href="#">X</a>
 			</div>
 		</header>
 		<main>
@@ -80,7 +143,7 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
-					<a href="#registro" class="registro_link">Registrarse</a>
+					<a href="#register" class="registro_link">Registrarse</a>
 				</div>
 				<div id="video">
 					<video width="300" height="200" controls>

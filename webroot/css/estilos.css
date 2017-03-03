@@ -407,8 +407,7 @@ footer p {
 }
 
 #login:target {
-	visibility: visible;
-	opacity: 1;
+
 	position: fixed;
 	top: 30px;
 	left: 0;
@@ -512,3 +511,52 @@ a.cerrar {
 	font-weight: 800;
 }
 
+#register {
+	position: relative;
+	top: -1700px;
+	background-color: #006666;
+	width: 700px;
+	height: 600px;
+	margin: 0 auto;
+
+}
+
+#register:target {
+	visibility: visible;
+	opacity: 1;
+	position: fixed;
+	top: 30px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+	-webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+}
+
+#register h1{
+	text-align: center;
+	font-size: x-large;
+	margin-top: 5px;
+	font-weight: bold;
+	color: #cccccc;
+}
+
+.register_container {
+	position: relative;
+	margin:7% auto;
+	/*padding: 30px 50px;*/
+	width: 70%;
+}
+
+.register_container form p {
+	margin-top:10px;
+	margin-bottom: 10px;
+	color: #F5F5F5;
+}
+
+.register_container form p input {
+	position: relative;
+	display: inline-block;
+}
