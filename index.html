@@ -10,7 +10,36 @@
 		<link rel="stylesheet" href="webroot/css/estilos.css"/>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script>
+			$(document).ready(function(){
 
+				if ($("#check_medio").is(':checked')){
+					$("#check_medio").prop('checked',true);
+					$("#Medio_fondo").removeClass("hidden");
+				} else {
+					$("#check_medio").prop('checked',false);
+					$("#Medio_fondo").addClass("hidden");
+				}
+
+				$("#check_fondo").click(function(event) {
+
+					if ($("#check_fondo").prop("checked")) {
+						$("#fondo").removeClass("hidden");
+						$("#check_fondo").prop("checked",true);
+					} else {
+						$("fondo").addClass("hidden");
+						$("#check_fondo").addProp("checked");
+					}
+				});
+
+				$("#check_trail").click(function(event) {
+
+					if ($("#check_trail").prop("checked")) {
+						$("#trail").css("display","block");
+					} 
+
+				});
+
+			});
 		</script>
 		<title></title>
 	</head>
@@ -20,9 +49,8 @@
 				<a href="#login" class="login_link">Login</a>
 				<a href="#register" class="registro_link">Registrarse</a>
 			</nav>
-			<div id="logo">
-				<p>ROMSTRACKER</p>
-			</div>
+			<p id="logo">ROMSTRACKER</p>
+
 			<div id="lema">
 				<h1>Rompe tus límites</h1>
 				<p>Marcate nuevas metas, no te estanques estamos aqui para que sepas como cuando y dónde tienes que mejorar. La mejor aplicación de monitorizaje deportivo, ¿Te vas a perder nuestras ventajas?</p>
@@ -54,31 +82,31 @@
 					<form action="#" method="post">
 						<p>
 							<label>Nombre</label>
-							<input type="text" name="nombre" id="first_input">
+							<input type="text" name="nombre">
 						</p>
 						<p>
 							<label>Apellidos</label>
-							<input type="text" name="apellidos" id="second_input">
+							<input type="text" name="apellidos">
 						</p>
 						<p>
 							<label>Nombre Usuario</label>
-							<input type="text" name="usuario" id="third_input">
+							<input type="text" name="usuario">
 						</p>
 						<p>
 							<label>E-mail</label>
-							<input type="text" name="e-mail" id="fourth_input">
+							<input type="text" name="e-mail">
 						</p>
 						<p>
 							<label>Contraseña</label>
-							<input type="text" name="pass" id="fifth_input">
+							<input type="text" name="pass">
 						</p>
 						<p>
 							<label>Estatura</label>
-							<input type="text" name="estatura" id="sixth_input">
+							<input type="text" name="estatura">
 						</p>
 						<p>
 							<label>Peso</label>
-							<input type="text" name="peso" id="seventh_input">
+							<input type="text" name="peso">
 						</p>
 						<p>
 							<h2>Zonas de frecuencia cardíaca:</h2>
@@ -104,11 +132,36 @@
 						</p>
 						<p>
 							<label>Tipo de corredor</label>
-							<input name="casual" type="checkbox" value="Casual"/>Casual
-							<input name="Medio_fondo" type="checkbox" value="medio_fondo"/>Medio Fondo
-							<input name="fondo" type="checkbox" value="fondo"/>Fondo
-							<input name="trail" type="checkbox" value="trail"/>Trail
+							<input name="casual" type="checkbox" value="Casual" id="check_casual"  />Casual
+							<input name="Medio_fondo" type="checkbox" value="medio_fondo" id="check_medio" />Medio Fondo
+							<input name="fondo" type="checkbox" value="fondo" id="check_fondo" />Fondo
+							<input name="trail" type="checkbox" value="trail" id="check_trail" />Trail
 						</p>
+						<div id="Medio_fondo" class="hidden">
+							<label>Mejor marca en 5Km</label>
+							<input type="text" name="5km">
+							<label>Mejor marca en 10Km</label>
+							<input type="text" name="10km">
+							<label>Mejor marca en media maraton</label>
+							<input type="text" name="med_maraton">
+						</div>
+						<div id="fondo" class="hidden">
+							<label>Mejor marca en media maraton</label>	
+							<input type="text" name="med_maraton">
+							<label>Mejor marca en maraton</label>
+							<input type="text" name="maraton">
+						</div>
+						<div id="trail" class="hidden">
+							<h2>Carrera más larga que has corrido</h2>
+							<label>Nombre</label>
+							<input type="text" name="nombre_race">
+							<label>Distancia</label>
+							<input type="text" name="distancia_race">
+							<label>Desnivel</label>
+							<input type="text" name="desnivel_race">
+							<label>Tiempo empleado</label>
+							<input type="text" name="time_race">
+						</div>	
 
 						<input class="boton" type="submit" name="enviar" value="Enviar" >
 					</form>
@@ -147,8 +200,8 @@
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 					</p>
-					<a href="#register" class="registro_link">Registrarse</a>
 				</div>
+				<a href="#register" class="registro_link">Registrarse</a>
 				<div id="video">
 					<video width="300" height="200" controls>
 						<source src="video.mp4" type='video/mp4; codecs="avc1,mp4a"'/>
@@ -161,9 +214,7 @@
 		</main>
 		<footer>
 			<p>© 2017 David Romero,ROMSTRACKER.inc Todos los derechos reservados</p>
-			<div id="logo_foot">
-				<p>ROMSTRACKER</p>
-			</div>
+				<p id="logo_foot">ROMSTRACKER</p>
 			<div id="menu_foot">
 				<h5>Comenzar</h5>
 				<ul>
