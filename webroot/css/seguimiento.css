@@ -1,0 +1,362 @@
+@font-face{
+    font-family: 'lobsterregular';
+    src: url('fonts/lobster-regular-webfont.eot');
+    src: url('fonts/lobster-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lobster-regular-webfont.woff2') format('woff2'),
+         url('fonts/lobster-regular-webfont.woff') format('woff'),
+         url('fonts/lobster-regular-webfont.ttf') format('truetype'),
+         url('fonts/lobster-regular-webfont.svg#lobsterregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.eot');
+    src: url('fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+	font-family: 'quicksandbold';
+    src: url('fonts/quicksand-bold-webfont.eot');
+    src: url('fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/quicksand-bold-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Fuente para la lista de redes sociales*/
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/rrss_icomoon.eot?z76ehs');
+    src: url('fonts/rrss_icomoon.eot?z76ehs#iefix') format('embedded-opentype'),
+    url('fonts/rrss_icomoon.ttf?z76ehs') format('truetype'),
+    url('fonts/rrss_icomoon.woff?z76ehs') format('woff'),
+    url('fonts/rrss_icomoon.svg?z76ehs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'quicksandregular';
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	width: 100%;
+	/*height: 80vh;*/
+	min-height: 150px;
+	background-size: cover;
+	background-position: 50% 50%;
+	position: relative;
+	top: 0;
+	left: 0;
+
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	right: 1vw;
+
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #008584;
+	border:0.25vh solid #008584;
+	border-radius: 4.2vh;
+	padding:0.2vh 2.14vw; 
+	background-color: #F5F5F5;
+	margin-top: 1vh;
+	margin-left: 1.6vw;
+	font-size: 95%;
+	font-weight: 800;
+}
+
+
+
+
+#logo {
+	display: inline-block;
+	position: absolute;
+	top:2%;
+	left: 2%;
+	width: 15vw;
+	height: 6vh;
+	font-family: 'lobsterregular';
+	font-size: 2vw;
+	border:0.25vh solid #008584;
+	line-height: 6vh;
+	background-color: #F5F5F5;
+	color: #008584;
+	font-weight: bold;
+	border-radius: 1vh;
+	text-align: center;
+
+}
+
+nav a:hover {
+	background-color: #008584;
+	color: #F5F5F5;
+	border-color: #F5F5F5;
+	
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	min-height: 600px;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	height: 41.7vh;
+	top:0;
+	right: 0;
+	background-color: #CCCCCC;
+	
+	
+}
+
+footer p {
+	text-align: center;
+	display: inline-block;
+	position: absolute;
+	top: 90%;
+	left: 30%;
+	font-size: 1.3vw;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before, [class*=" icon-"] :before {
+    padding: 0.4vw 0.83vh;
+    border-radius: 50px;
+}
+
+.icon-google-plus:before {
+    content: "\ea8b";
+    color: #CCCCCC;
+    background-color: #000;
+}
+
+.icon-facebook:before {
+    content: "\ea90";
+    color: #CCCCCC;
+    background-color: #000;
+}
+
+.icon-instagram:before {
+    content: "\ea92";
+    color: #CCCCCC;
+    background-color: #000;
+}
+
+.icon-twitter:before {
+    content: "\ea96";
+    color: #CCCCCC;
+    background-color: #000;
+}
+
+.rrss {
+	display: block;
+	position: absolute;
+	right:0;
+	list-style: none;
+	top:2.1vh;
+}
+
+.rrss li {
+	float: left;
+	margin:0vh 0.4vw;
+}
+
+#menu_foot {
+	position: absolute;
+	width: 7.3vw;
+	height: 10.4vh;
+	left: 35%;
+	top: 13%;
+	font-size: 1.5vw;
+}
+
+#menu_foot h5 {
+	margin-bottom: 1.25vh;
+
+}
+
+
+#menu_foot ul li a{
+	text-decoration: none;
+	color: #006666;
+}
+
+#menu_foot ul li a:hover {
+	text-decoration: underline;
+}
+
+#doc_foot {
+	position: absolute;
+	width: 12.5vw;
+	height: 10.4vh;
+	left: 55%;
+	top:13%;
+	font-size: 1.5vw;
+}
+
+#doc_foot h5 {
+	margin-bottom: 1.25vh;
+
+}
+
+
+#doc_foot ul li a{
+	text-decoration: none;
+	color: #006666;
+}
+
+#doc_foot ul li a:hover {
+	text-decoration: underline;
+}
+
+#logo_foot {
+	display: block;
+	position: relative;
+	top:15%;
+	left: 6%;
+	width: 15vw;
+	height: 6vh;
+	font-family: 'lobsterregular';
+	font-size: 2vw;
+	border:0.25vh solid #008584;
+	line-height: 6vh;
+	background-color: #F5F5F5;
+	color: #008584;
+	font-weight: bold;
+	border-radius: 1vh;
+	text-align: center;
+	margin-right:0;
+}
+
+
+.acordeon{
+	list-style:none;
+	width:30%;
+	font-size:18px;
+	background-color: #006666;
+	border: 1px solid rgba(0,0,0,0.8);
+}
+
+.acordeon h1 {
+	padding:20px;
+	color: #f5f5f5;
+	text-align: center;
+}
+
+.acordeon li a{
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #000;
+	background-color:#F5F5F5;
+	text-decoration:none;
+	color:#006666;
+	font-weight: bold;
+	text-shadow: 1px 0px 1px rgba(0,0,0,0.2);
+	/*filter: dropshadow(color=#000, offx=1, offy=0);*/
+	padding:10px;
+	padding-left:20px;
+}
+
+.acordeon li ul li a{
+	font-size:14px;
+	color:#006666;
+	text-shadow: 1px 0px 1px rgba(255,255,255,0.5);
+	
+}
+
+/*.acordeon li a:hover{
+
+	-moz-transition: background 0.3s ease-in;
+	-webkit-transition: background 0.3s ease-in;
+	-o-transition: background 0.3s ease-in;
+}*/
+
+.acordeon ul{
+	list-style:none;
+	display: none;
+	overflow: hidden;
+	transition:1s;
+	-moz-transition:1s;
+	-webkit-transition:1s;
+}
+ 
+/*.acordeon li:hover ul{
+	height:120px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}*/
+ 
+.acordeon ul li a{
+	background:#F5F5F5;
+}
+ 
+.acordeon ul li a:hover {
+    background: none repeat scroll 0 0 #006666;
+    color: #fff;
+    -moz-transition: color 0.4s ease;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
+}
+
+
+
+.acordeon_mes span.toggle-icon:before {
+    content:"+";
+}
+ 
+.acordeon_mes.open span.toggle-icon:before {
+    content:"-";
+}
+ 
+.acordeon_mes span.toggle-icon {
+	position: absolute;
+	top:0;
+	left: 90%;
+    font-size: 38px;
+    font-weight:bold;
+
+ }
+
+#datos_race {
+	background: #008584;
+}

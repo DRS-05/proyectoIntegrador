@@ -7,10 +7,24 @@
 		<meta name="viewport" content= "width=device-width, initial-scale=1.0, user-scalable=no"/>
 		<meta name="author" content="David Romero"/>
 		<link rel="stylesheet" href="webroot/css/reset.css"/>
-		<link rel="stylesheet" href="webroot/css/estilos.css"/>
+		<link rel="stylesheet" href="webroot/css/seguimiento.css"/>
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script>
-			
+			$(document).ready(function(){
+				$(".acordeon_mes").click(function(){
+		
+				   var contenido=$(this).children(".acordeon_contenido");
+							
+				   	if(contenido.css("display")=="none"){ //open		
+				      	contenido.slideDown(250);			
+				      	$(this).addClass("open");
+				   	} else{ //close		
+				      	contenido.slideUp(250);
+				      	$(this).removeClass("open");	
+				  	}
+							
+				});
+			});
 		</script>
 		<title></title>
 	</head>
@@ -21,5 +35,85 @@
 			</nav>
 			<p id="logo">ROMSTRACKER</p>
 		</header>
+		<main>
+			<ul class="acordeon">
+				<h1>ACTIVIDADES</h1>
+			    <li class="acordeon_mes"><a href="#">Enero<span class="toggle-icon"></span></a>
+			      <ul class="acordeon_contenido"> 
+			        <li><a href="#">Carrera 1</a></li>
+			        <li><a href="#">Carrera 2</a></li>
+			        <li><a href="#">Carrera 3</a></li>
+			      </ul>
+			    </li> 
+			 
+			    <li class="acordeon_mes"><a href="#">Febrero<span class="toggle-icon"></span></a>
+			      <ul class="acordeon_contenido">
+			        <li><a href="#">Carrera 4</a></li>
+			        <li><a href="#">Carrera 5</a></li>
+			        <li><a href="#">Carrera 6</a></li>
+			      </ul>
+			    </li> 
+			 
+			     <li class="acordeon_mes"><a href="#">Marzo<span class="toggle-icon"></span></a>
+			       <ul class="acordeon_contenido">
+			         <li><a href="#">Carrera 7</a></li>
+			         <li><a href="#">Carrera 8</a></li>
+			         <li><a href="#">Carrera 9</a></li>
+			      </ul>
+			   </li> 
+
+			   <li class="acordeon_mes"><a href="#">Abril<span class="toggle-icon"></span></a>
+			       <ul class="acordeon_contenido">
+			         <li><a href="#">Carrera 10</a></li>
+			         <li><a href="#">Carrera 11</a></li>
+			      </ul>
+			   </li>
+ 			</ul>
+ 			<div id="datos_race">
+ 				<h1 class="titulo_race">Carrera 1</h1>
+ 				<span class="date_race">02/03/2017</span>
+ 				<div class="tabla_resumen">
+ 					
+ 				</div>
+ 			</div>
+		</main>
+		<footer>
+			<p>© 2017 David Romero,ROMSTRACKER.inc Todos los derechos reservados</p>
+				<p id="logo_foot">ROMSTRACKER</p>
+			<div id="menu_foot">
+				<h5>Comenzar</h5>
+				<ul>
+					<li><a href="">Registresé</a></li>
+					<li><a href="">Inciar sesión</a></li>
+					<li><a href="">Sobre nosotros</a></li>
+					<li><a href=""></a></li>
+				</ul>
+			</div>
+			<div id="doc_foot">
+				<h5>Documentación</h5>
+				<ul>
+					<li><a href="">Calculadora JS</a></li>
+					<li><a href="">	Diagrama de clases</a></li>
+					<li><a href="">Diagrama de navegación</a></li>
+					<li><a href="">Estructura de almacenamiento</a></li>
+					<li><a href="">Acceso a los códigos fuente</a></li>
+				</ul>
+			</div>
+
+ 			<ul class="rrss">
+	            <li>
+	                <span class="icon-facebook"></span>
+	            </li>
+	            <li>
+	                <span class="icon-twitter"></span>
+	            </li>
+	            <li>
+	                <span class="icon-google-plus"></span>
+	            </li>
+	            <li>
+	                <span class="icon-instagram"></span>
+	            </li>
+        	</ul>
+		</footer>
 	</body>
 </html>
